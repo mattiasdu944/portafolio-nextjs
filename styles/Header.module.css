@@ -1,0 +1,28 @@
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    top: -1000rem;
+}
+
+.active{
+    top: 0;
+}
+
+@media (min-width:640px) {
+    .nav_menu{
+        flex-direction: row;
+        position: static;
+        height: auto;
+    }
+    
+}
+
